@@ -3,3 +3,4 @@ dataset/
 .vscode/
 .venv/
 build/
+.DS_Store
