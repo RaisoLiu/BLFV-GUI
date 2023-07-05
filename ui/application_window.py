@@ -12,7 +12,7 @@ from video_processing import VideoManager
 from PIL import Image, ImageTk
 from tkinter import ttk
 from matplotlib import pyplot as plt
-kernel_frame_size = 4
+kernel_frame_size = 8
 
 
 # transform
@@ -102,7 +102,7 @@ class ApplicationWindow(tk.Tk):
 
 
 
-        self.export_menu = tk.Label(self, text='export_menu', bg='orange')
+        self.export_menu = tk.Frame(self, bg='red')
         self.export_menu.grid(row=5,column=6,rowspan=3, columnspan=2, sticky='nsew')   
 
         

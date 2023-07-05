@@ -60,6 +60,9 @@ class FeatureFilter:
         return mask, z
     
     def addLayer(self, X, n_pca):
+        if self.blk:
+            mm, _ = self.getFeature(X)
+            X = X[mm]
         self.blk.append(Layer(X, n_pca))
 
     def rmLayer(self):
